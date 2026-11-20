@@ -1,0 +1,1 @@
+Set-Content -Path .gitignore -Value "__pycache__/`n*.py[cod]`n.venv/`nvenv/`n.vscode/`n.DS_Store" -Encoding UTF8
