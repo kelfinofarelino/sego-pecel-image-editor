@@ -1,5 +1,5 @@
 # Sego Pecel Image Editor
-
+![demo screen](image.png)
 **Studi Eksplorasi Grayscale dan Optik untuk Pengolahan Citra dan Elemen piksel**
 
 Sego Pecel Image Editor adalah aplikasi pengolahan citra digital berbasis desktop yang dibangun menggunakan **Python**, **PyQt6**, dan **NumPy**. Seluruh operasi manipulasi piksel, konvolusi spasial 2D, transformasi geometri, hingga segmentasi ruang warna diimplementasikan secara matematis menggunakan operasi matriks array NumPy tanpa bergantung pada fungsi filter instan bawaan pustaka pengolahan citra. Pustaka OpenCV (`cv2`) hanya digunakan untuk membaca/menyimpan berkas citra dan mengambil frame mentah dari kamera.
