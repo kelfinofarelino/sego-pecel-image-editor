@@ -25,6 +25,7 @@ class InspectorPanel(QWidget):
         self.setStyleSheet(
             """
             QWidget { background-color: #14161b; color: #e2e8f0; }
+            QLabel { background: transparent; }
             QFrame#Card {
                 background-color: #1a1d24;
                 border: 1px solid #282d38;
@@ -193,9 +194,9 @@ class InspectorPanel(QWidget):
         self.params_container = QWidget()
         self.params_container.setStyleSheet("background: transparent;")
         self.params_layout = QVBoxLayout(self.params_container)
-        self.params_layout.setContentsMargins(0, 2, 4, 2)
+        self.params_layout.setContentsMargins(0, 6, 4, 4)
         self.params_layout.setSpacing(6)
-        self.params_layout.addStretch()
+        self.params_layout.setAlignment(Qt.AlignmentFlag.AlignTop)
         scroll_area.setWidget(self.params_container)
 
         action_row = QHBoxLayout()
