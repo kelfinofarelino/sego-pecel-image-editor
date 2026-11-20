@@ -142,9 +142,9 @@ python main.py
       <sub>NIM: 123240205</sub>
     </td>
     <td align="center" width="25%">
-      <img src="assets/anggota_2.png" width="160" alt="Anggota Kelompok 2"/><br />
-      <strong>Nama Anggota 2</strong><br />
-      <sub>NIM: 123240002</sub>
+      <img src="assets/anggota_2.png" width="160" alt="Muhammad Fariz Syahada"/><br />
+      <strong>Muhammad Fariz Syahada</strong><br />
+      <sub>NIM: 123240158</sub>
     </td>
     <td align="center" width="25%">
       <img src="assets/anggota_3.png" width="160" alt="Anggota Kelompok 3"/><br />
