@@ -20,10 +20,10 @@ from PyQt6.QtWidgets import (
 )
 
 TEAM_MEMBERS = [
-    {"nama": "Muhammad Farelino Kelfin R.", "nim": "123240205", "foto": "assets/anggota_1.png"},
-    {"nama": "Anggota Kelompok 2", "nim": "123240002", "foto": "assets/anggota_2.png"},
-    {"nama": "Anggota Kelompok 3", "nim": "123240003", "foto": "assets/anggota_3.png"},
-    {"nama": "Anggota Kelompok 4", "nim": "123240004", "foto": "assets/anggota_4.png"},
+    {"nama": "Muhammad Farelino Kelfin Ramadhani", "nim": "123240205", "foto": "assets/anggota_1.jpg"},
+    {"nama": "Naufal Alwi Rizqillah", "nim": "123240215", "foto": "assets/anggota_2.jpg"},
+    {"nama": "Muhammad Fariz Syahada", "nim": "123240158", "foto": "assets/anggota_3.jpg"},
+    {"nama": "Muhamamd Wildan Hanif", "nim": "123230215", "foto": "assets/anggota_4.jpg"},
 ]
 
 
