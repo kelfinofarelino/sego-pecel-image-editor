@@ -147,14 +147,14 @@ python main.py
       <sub>NIM: 123240158</sub>
     </td>
     <td align="center" width="25%">
-      <img src="assets/anggota_3.png" width="160" alt="Anggota Kelompok 3"/><br />
-      <strong>Nama Anggota 3</strong><br />
-      <sub>NIM: 123240003</sub>
+      <img src="assets/anggota_3.jpeg" width="160" alt="Naufal Alwi Rizqillah"/><br />
+      <strong>Naufal Alwi Rizqillah</strong><br />
+      <sub>NIM: 123240215</sub>
     </td>
     <td align="center" width="25%">
-      <img src="assets/anggota_4.png" width="160" alt="Anggota Kelompok 4"/><br />
-      <strong>Nama Anggota 4</strong><br />
-      <sub>NIM: 123240004</sub>
+      <img src="assets/anggota_4.jpeg" width="160" alt="Muhamamd Wildan Hanif"/><br />
+      <strong>Muhamamd Wildan Hanif</strong><br />
+      <sub>NIM: 123230215</sub>
     </td>
   </tr>
 </table>
