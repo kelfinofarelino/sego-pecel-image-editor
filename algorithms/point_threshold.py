@@ -1,5 +1,6 @@
 import numpy as np
 
+# Mengubah citra berwarna menjadi citra biner (hitam-putih) berdasarkan ambang batas (threshold) yang diberikan. Piksel dengan nilai luminansi di atas ambang akan menjadi putih (255), sedangkan di bawah ambang akan menjadi hitam (0).
 
 def apply_threshold(image: np.ndarray, threshold: int = 128) -> np.ndarray:
     img = image.astype(np.float64)

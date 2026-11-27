@@ -1,5 +1,6 @@
 import numpy as np
 
+# Mengatur keseimbangan warna (color balance) citra berwarna dengan mengubah nilai piksel berdasarkan suhu (temperature) dan pengali RGB Channel Mixer (w_r, w_g, w_b) yang diberikan. Rumus yang digunakan adalah: out = [R + temp_shift * w_r, G * w_g, B - temp_shift * w_b], di mana temp_shift = temperature * 0.6
 
 def apply_color_balance(
     image: np.ndarray,

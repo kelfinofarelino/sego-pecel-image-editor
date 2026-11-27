@@ -1,6 +1,7 @@
 import numpy as np
 from core.convolution_engine import convolve2d_manual
 
+### Mengaburkan (blur) citra berwarna menggunakan filter Gaussian blur (3x3 atau 5x5) dengan kernel Gaussian yang sesuai. Rumus yang digunakan adalah: out = convolve2d_manual(image, kernel), di mana kernel adalah matriks Gaussian 3x3 atau 5x5.
 
 def apply_gaussian_blur(
     image: np.ndarray, ksize: int = 3

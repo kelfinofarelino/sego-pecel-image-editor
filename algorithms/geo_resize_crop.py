@@ -1,5 +1,6 @@
 import numpy as np
 
+### Mengubah ukuran (resize) dan memotong (crop) citra berwarna dengan metode nearest neighbor atau bilinear interpolation. Resize dilakukan dengan mengalikan dimensi citra dengan persentase skala yang diberikan, sedangkan crop dilakukan dengan menentukan batas atas, bawah, kiri, dan kanan dari area yang ingin dipotong.
 
 def resize_manual(
     image: np.ndarray, scale_percent: int = 100, method: str = "bilinear"

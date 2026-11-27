@@ -1,6 +1,7 @@
 import numpy as np
 from core.convolution_engine import convolve2d_manual
 
+### Mengubah citra berwarna menjadi citra tepi (edge detection) menggunakan metode Sobel, Prewitt, Laplacian, atau Canny. Metode Sobel dan Prewitt menggunakan kernel konvolusi untuk menghitung gradien, sedangkan Laplacian menggunakan kernel untuk mendeteksi perubahan intensitas. Metode Canny melibatkan beberapa tahap: Gaussian smoothing, gradien Sobel, non-maximum suppression, double thresholding, dan hysteresis. Dengan rumus: out = convolve2d_manual(gray, kernel), di mana gray adalah citra grayscale dan kernel adalah kernel konvolusi yang sesuai dengan metode yang dipilih.
 
 def _to_gray_float(image: np.ndarray) -> np.ndarray:
     img = image.astype(np.float64)

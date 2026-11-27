@@ -1,7 +1,9 @@
 import numpy as np
 from algorithms.spatial_gaussian_blur import apply_gaussian_blur
 
+### Mengubah citra berwarna menjadi citra sketsa pensil (pencil sketch) dan menambahkan efek vignette (gelap di tepi) dengan menggunakan konversi ke grayscale, inversi, Gaussian blur, dan rumus Color Dodge.
 
+# Rumus Color Dodge: min(255, (I * 256) / (255 - B_inv + 1)), di mana I adalah citra grayscale asli dan B_inv adalah citra negatif yang telah diburamkan.
 def apply_pencil_sketch(image: np.ndarray) -> np.ndarray:
     img = image.astype(np.float64)
     gray = 0.299 * img[:, :, 0] + 0.587 * img[:, :, 1] + 0.114 * img[:, :, 2]
@@ -17,7 +19,7 @@ def apply_pencil_sketch(image: np.ndarray) -> np.ndarray:
     sketch_u8 = np.clip(dodge, 0, 255).astype(np.uint8)
     return np.stack([sketch_u8, sketch_u8, sketch_u8], axis=-1)
 
-
+# Menambahkan efek vignette (gelap di tepi) pada citra berwarna dengan membuat masker Gaussian berbentuk lingkaran dan mengalikan citra asli dengan rumus: out = image * exp(-strength * 2.5 * (norm_dist^2)), di mana norm_dist adalah jarak normalisasi dari pusat citra ke setiap piksel.
 def apply_vignette(image: np.ndarray, strength: float = 0.65) -> np.ndarray:
     H, W = image.shape[:2]
     cx, cy = W / 2.0, H / 2.0

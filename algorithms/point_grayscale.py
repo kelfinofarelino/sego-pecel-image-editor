@@ -1,5 +1,6 @@
 import numpy as np
 
+# Mengubah citra berwarna menjadi citra grayscale menggunakan metode average (I=(R+G+B)/3) atau luminosity (I=0.299R + 0.587G + 0.114B)
 
 def apply_grayscale(image: np.ndarray, mode: str = "luminosity") -> np.ndarray:
     img = image.astype(np.float64)

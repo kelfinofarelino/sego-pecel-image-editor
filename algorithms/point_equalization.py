@@ -1,5 +1,6 @@
 import numpy as np
 
+# Mengubah citra berwarna menjadi citra dengan histogram equalization manual menggunakan perhitungan PDF dan CDF per kanal. Dengan rumus: lut = round(255 * CDF), di mana CDF adalah cumulative distribution function dari PDF (probability density function) histogram citra.
 
 def apply_histogram_equalization(image: np.ndarray) -> np.ndarray:
     """

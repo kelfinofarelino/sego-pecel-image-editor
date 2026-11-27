@@ -1,6 +1,7 @@
 import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 
+### Menambahkan noise (salt & pepper, Gaussian) dan filter median untuk mengurangi noise pada citra berwarna.
 
 def add_salt_pepper_noise(image: np.ndarray, amount: float = 0.05) -> np.ndarray:
     rng = np.random.default_rng()

@@ -1,6 +1,7 @@
 import numpy as np
 from algorithms.spatial_gaussian_blur import apply_gaussian_blur
 
+## Segmentasi warna target pada ruang HSV lalu memburamkan latar belakang (Bokeh).
 
 def rgb_to_hsv_manual(image: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """

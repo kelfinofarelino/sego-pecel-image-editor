@@ -1,5 +1,6 @@
 import numpy as np
 
+### Mengubah citra berwarna menjadi citra pixelated (kotak-kotak) dengan mengelompokkan piksel dalam blok berukuran tertentu dan mengganti nilai piksel dalam blok tersebut dengan rata-rata warna blok tersebut.
 
 def apply_pixelate(image: np.ndarray, block_size: int = 12) -> np.ndarray:
     k = max(2, int(block_size))
